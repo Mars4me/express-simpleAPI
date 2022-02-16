@@ -9,6 +9,8 @@ const DB_URL = 'mongodb+srv://qwe:123@cluster0.i8ry5.mongodb.net/myFirstDatabase
 const app = express();
 
 app.use(express.json())
+app.use(express.static('static'))
+app.use(fileUpload({}))
 app.use('/api', router)
 
 const start = async () => {
