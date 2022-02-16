@@ -1,4 +1,5 @@
 import PostService from "./PostService.js";
+
 class PostController {
 
     async create(req, res) {
